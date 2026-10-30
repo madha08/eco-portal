@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal for an Ecological Volunteer Movement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">♻️ EcoPortal</div>
+        <nav class="nav">
+            <a href="#actions">Eco-Actions</a>
+            <a href="#points">Collection Points</a>
+            <a href="#tips">Eco-Tips</a>
+            <a href="#volunteer" class="btn-vol">Become a Volunteer</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Let's Make Our City Cleaner Together</h1>
+            <a href="#volunteer" class="cta-btn">I Want to Join the Clean-up Day</a>
+        </section>
+
+        <section id="points" class="grid-section">
+            <article class="card">
+                <h3>Central Station</h3>
+                <p>Schedule: Mon-Sat 09:00 - 18:00</p>
+                <p>Fractions: Polymers, Glass, Paper</p>
+            </article>
+            <article class="card">
+                <h3>North District Point</h3>
+                <p>Schedule: Daily 10:00 - 20:00</p>
+                <p>Fractions: Polymers, Paper</p>
+            </article>
+        </section>
+
+        <section id="volunteer" class="form-section">
+            <form>
+                <h2>Volunteer Application</h2>
+                <label>Name: <input type="text" required></label>
+                <label>Age: <input type="number" required min="14" max="99"></label>
+                <label>District: <input type="text" required></label>
+                <label>Competency:
+                    <select required>
+                        <option value="transport">Transport</option>
+                        <option value="resources">Resources</option>
+                        <option value="manual">Manual labor</option>
+                    </select>
+                </label>
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="counters">Recycled: 1,250 kg</div>
+        <div class="links">
+            <a href="#">Environmental Fund</a>
+        </div>
+        <button class="theme-switcher">Light/Dark Mode</button>
+    </footer>
+</body>
+</html>

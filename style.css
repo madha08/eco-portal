@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2e7d32;
+    color: white;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.hero {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    padding: 2rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-section input, .form-section select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.form-section button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav {
+        margin-top: 1rem;
+    }
+    .nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
